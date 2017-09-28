@@ -53,7 +53,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo, github," />
+  <meta name="keywords" content="hexo,github," />
 
 
 
@@ -69,18 +69,18 @@
 
 
 
-<meta name="description" content="##摘要当前比较流行的方法就是Hexo与Github搭建博客。Hexo是一个快速、简洁且高效的博客框架，有比较丰富的主题和插件支持。Github为用户提供了Github Pages，其空间免费稳定，非常适合搭建个人博客。下面就为大家介绍如何使用Hexo和Github来搭建一个技术博客。">
-<meta name="keywords" content="hexo, github">
+<meta name="description" content="前言当前比较流行的方法就是Hexo与Github搭建博客。Hexo是一个快速、简洁且高效的博客框架，有比较丰富的主题和插件支持。Github为用户提供了Github Pages，其空间免费稳定，非常适合搭建个人博客。下面就为大家介绍如何使用Hexo和Github来搭建一个技术博客。">
+<meta name="keywords" content="hexo,github">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于Hexo和Github搭建技术博客">
 <meta property="og:url" content="http://yoursite.com/2017/09/28/基于Hexo和Github搭建技术博客/index.html">
 <meta property="og:site_name" content="晨之科SDK团队博客">
-<meta property="og:description" content="##摘要当前比较流行的方法就是Hexo与Github搭建博客。Hexo是一个快速、简洁且高效的博客框架，有比较丰富的主题和插件支持。Github为用户提供了Github Pages，其空间免费稳定，非常适合搭建个人博客。下面就为大家介绍如何使用Hexo和Github来搭建一个技术博客。">
+<meta property="og:description" content="前言当前比较流行的方法就是Hexo与Github搭建博客。Hexo是一个快速、简洁且高效的博客框架，有比较丰富的主题和插件支持。Github为用户提供了Github Pages，其空间免费稳定，非常适合搭建个人博客。下面就为大家介绍如何使用Hexo和Github来搭建一个技术博客。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-28T12:22:27.607Z">
+<meta property="og:updated_time" content="2017-09-28T12:40:37.225Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于Hexo和Github搭建技术博客">
-<meta name="twitter:description" content="##摘要当前比较流行的方法就是Hexo与Github搭建博客。Hexo是一个快速、简洁且高效的博客框架，有比较丰富的主题和插件支持。Github为用户提供了Github Pages，其空间免费稳定，非常适合搭建个人博客。下面就为大家介绍如何使用Hexo和Github来搭建一个技术博客。">
+<meta name="twitter:description" content="前言当前比较流行的方法就是Hexo与Github搭建博客。Hexo是一个快速、简洁且高效的博客框架，有比较丰富的主题和插件支持。Github为用户提供了Github Pages，其空间免费稳定，非常适合搭建个人博客。下面就为大家介绍如何使用Hexo和Github来搭建一个技术博客。">
 
 
 
@@ -386,22 +386,21 @@
       
 
       
-        <p>##摘要<br>当前比较流行的方法就是Hexo与Github搭建博客。Hexo是一个快速、简洁且高效的博客框架，有比较丰富的主题和插件支持。<br>Github为用户提供了Github Pages，其空间免费稳定，非常适合搭建个人博客。下面就为大家介绍如何使用Hexo和Github来搭<br>建一个技术博客。<br><a id="more"></a></p>
-<p>##准备工作<br>需要先安装以下两个软件：</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>当前比较流行的方法就是Hexo与Github搭建博客。Hexo是一个快速、简洁且高效的博客框架，有比较丰富的主题和插件支持。<br>Github为用户提供了Github Pages，其空间免费稳定，非常适合搭建个人博客。下面就为大家介绍如何使用Hexo和Github来搭<br>建一个技术博客。<br><a id="more"></a></p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>需要先安装以下两个软件：</p>
 <p><a href="https://nodejs.org/" target="_blank" rel="external">nodejs</a></p>
 <p><a href="https://git-scm.com/" target="_blank" rel="external">git</a></p>
-<p>##安装Hexo<br>① 安装<br>打开cmd.exe，输入以下命令，安装Hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div></pre></td></tr></table></figure></p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>① 安装<br>打开cmd.exe，输入以下命令，安装Hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div></pre></td></tr></table></figure></p>
 <p>② 初始化<br>在你任意文件夹中创建一个用来存放博客的文件夹，我这里选的是 <code>E:\MyBlog</code>；<br>在跟目录文件夹下输入以下命令进行初始化：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure></p>
 <p>然后输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install</div></pre></td></tr></table></figure></p>
 <p>再输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g</div></pre></td></tr></table></figure></p>
 <p>最后输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo s</div></pre></td></tr></table></figure></p>
 <p>此时博客就创建好了，你可以打开<code>localhost:4000</code>这个链接查看。<br>介绍以下，hexo常用命令：<br><code>hexo init</code> //初始化一个文件夹，它会为这个文件夹配置所有骨架<br><code>hexo g</code> //即hexo generate，生成静态文件<br><code>hexo s</code> //即hexo server，创建服务<br><code>hexo d</code> //即hexo deploy,用于将本地文件发布到github上<br><code>hexo n</code> //即hexo new,用于新建一篇文章<br>现在只是在本地搭建了一个技术博客，要想把博客内容让所有人都能看到，就得借助Github了，把博客内容部署到Github上去。</p>
-<p>##部署至Github<br>① 在Github注册一个账号，并创建一个仓库。<br>② 仓库名要设置和用户名相同，所以我这仓库名设置为<code>morningtec-moblie.github.io</code><br>③ 将Github账号密码设置到本地git中，你也可以配置SSH<br>④ 将博客的根目录的<code>_config.yml</code>文件的底部<code>deploy</code>设置为：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">  repository: https://github.com/morningtec-moblie/morningtec-moblie.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<h2 id="部署至Github"><a href="#部署至Github" class="headerlink" title="部署至Github"></a>部署至Github</h2><p>① 在Github注册一个账号，并创建一个仓库。<br>② 仓库名要设置和用户名相同，所以我这仓库名设置为<code>morningtec-moblie.github.io</code><br>③ 将Github账号密码设置到本地git中，你也可以配置SSH<br>④ 将博客的根目录的<code>_config.yml</code>文件的底部<code>deploy</code>设置为：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">  repository: https://github.com/morningtec-moblie/morningtec-moblie.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
 <p><font color="red">注意：冒号（:）后都有一个空格。</font>你可以把此段代码复制过去，并把<code>https://github.com/morningtec-moblie/morningtec-moblie.github.io.git</code>替换为你自己的Github仓库路径<br>⑤ 部署：<br>在跟目录文件夹下输入<code>hexo g</code>，在输入<code>hexo d</code>，如果此时报错你可以输入<code>npm install hexo-deployer-git --save</code>来解决<br>⑥ 如果上面都没什么问题的话，访问<code>morningtec-moblie.github.io</code>就能看到自己的博客了。</p>
-<p>##绑定域名<br>① 去各大域名提供商购买我们心仪的域名，比如说阿里云、腾讯、万网等，此处不再赘述。然后进行如下配置：<br>② 域名解析：以万网为示例，登录进入万网的域名控制台，点击”域名和网站”中的”云DNS”<br>③ 点击对应域名的”解析”<br>④ 点击添加解析，记录类型选A或CNAME，A记录的记录值就是ip地址，github(官方文档)提供了两个IP地址，192.30.252.153和<br>192.30.252.154，这两个IP地址为github的服务器地址，两个都要填上，解析记录设置两个www和@，线路就默认就行了，<br>CNAME记录值填你的github博客网址。如我的是morningtec-moblie.github.io<br>⑤ HEXO根目录的SOURCE文件夹里创建CNAME文件，不带任何后缀，里面添加你的域名信息，如：blog.morningtec.cn</p>
-<p>##配置Hexo主题：</p>
-<p>可能你觉得默认主题不太好看，想要设置喜欢主题。我在这把主题设置为<code>next</code>，最火的hexo的主题。<br>在跟目录文件夹下输入：<code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code>下载next主题。<br>下面我会把<code>E:\MyBlog\_config.yml</code>文件称为<code>站点配置</code>，把<code>E:\MyBlog\themes\next\_config.yml</code>文件称为<code>主题配置</code><br>下载完成后，将<code>站点配置</code>文件的<code>theme</code>字段的值改为<code>next</code>，重新编译并上传到Github上后，访问博客链接，你就会发现主题已经改成next了，next的默认语言为英文，你可以更改为简体中文，找到并打开<code>站点配置</code>文件，找到<code>language</code>字段，将值改为<code>zh-Hans</code>。这里介绍下<code>站点配置</code>文件部分字段的含义：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">title: 晨之科SDK团队博客 // 博客名称</div><div class="line">subtitle:			   // 博客副名称</div><div class="line">description:           // 描述</div><div class="line">author: 晨之科SDK团队    // 作者</div><div class="line">language: zh-Hans      // 语言</div></pre></td></tr></table></figure></p>
-<p>##设置NexT的菜单：<br>编辑 <code>主题配置</code>文件，修改以下内容：<br>设定菜单内容，对应的字段是 menu。 菜单内容的设置格式是：item name: link。其中 item name 是一个名称，这个名称并不直接显示在页面上，她将用于匹配图标以及翻译。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">menu:</div><div class="line">  home: /</div><div class="line">  archives: /archives</div><div class="line">  <span class="comment">#about: /about</span></div><div class="line">  <span class="comment">#categories: /categories</span></div><div class="line">  tags: /tags</div><div class="line">  <span class="comment">#commonweal: /404.html</span></div></pre></td></tr></table></figure></p>
+<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><p>① 去各大域名提供商购买我们心仪的域名，比如说阿里云、腾讯、万网等，此处不再赘述。然后进行如下配置：<br>② 域名解析：以万网为示例，登录进入万网的域名控制台，点击”域名和网站”中的”云DNS”<br>③ 点击对应域名的”解析”<br>④ 点击添加解析，记录类型选A或CNAME，A记录的记录值就是ip地址，github(官方文档)提供了两个IP地址，192.30.252.153和<br>192.30.252.154，这两个IP地址为github的服务器地址，两个都要填上，解析记录设置两个www和@，线路就默认就行了，<br>CNAME记录值填你的github博客网址。如我的是morningtec-moblie.github.io<br>⑤ HEXO根目录的SOURCE文件夹里创建CNAME文件，不带任何后缀，里面添加你的域名信息，如：blog.morningtec.cn</p>
+<h2 id="配置Hexo主题："><a href="#配置Hexo主题：" class="headerlink" title="配置Hexo主题："></a>配置Hexo主题：</h2><p>可能你觉得默认主题不太好看，想要设置喜欢主题。我在这把主题设置为<code>next</code>，最火的hexo的主题。<br>在跟目录文件夹下输入：<code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code>下载next主题。<br>下面我会把<code>E:\MyBlog\_config.yml</code>文件称为<code>站点配置</code>，把<code>E:\MyBlog\themes\next\_config.yml</code>文件称为<code>主题配置</code><br>下载完成后，将<code>站点配置</code>文件的<code>theme</code>字段的值改为<code>next</code>，重新编译并上传到Github上后，访问博客链接，你就会发现主题已经改成next了，next的默认语言为英文，你可以更改为简体中文，找到并打开<code>站点配置</code>文件，找到<code>language</code>字段，将值改为<code>zh-Hans</code>。这里介绍下<code>站点配置</code>文件部分字段的含义：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">title: 晨之科SDK团队博客 // 博客名称</div><div class="line">subtitle:			   // 博客副名称</div><div class="line">description:           // 描述</div><div class="line">author: 晨之科SDK团队    // 作者</div><div class="line">language: zh-Hans      // 语言</div></pre></td></tr></table></figure></p>
+<h2 id="设置NexT的菜单："><a href="#设置NexT的菜单：" class="headerlink" title="设置NexT的菜单："></a>设置NexT的菜单：</h2><p>编辑 <code>主题配置</code>文件，修改以下内容：<br>设定菜单内容，对应的字段是 menu。 菜单内容的设置格式是：item name: link。其中 item name 是一个名称，这个名称并不直接显示在页面上，她将用于匹配图标以及翻译。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">menu:</div><div class="line">  home: /</div><div class="line">  archives: /archives</div><div class="line">  <span class="comment">#about: /about</span></div><div class="line">  <span class="comment">#categories: /categories</span></div><div class="line">  tags: /tags</div><div class="line">  <span class="comment">#commonweal: /404.html</span></div></pre></td></tr></table></figure></p>
 <p>删除<code>#</code>就可以在博客内开启相应的菜单</p>
 <p>NexT 默认的菜单项有:</p>
 <table>
@@ -446,16 +445,16 @@
 </tbody>
 </table>
 <p>到这里，你已经开启了菜单页面，并没有创建，想要创建菜单页面，在跟目录文件夹下输入<code>hexp new page “tags”</code>，创建tag页面，其他的页面你也可以相应的创建出来。</p>
-<p>##设置小图片：<br>将 favicon.ico 文件放在<code>E:\MyBlog\source</code>目录下</p>
-<p>##设置头像：<br>将头像图片放在<code>E:\MyBlog\themes\next\source\images</code>目录下，并在主题配置的avatar的字段的值改为<code>/images/你的图片文件</code></p>
-<p>##设置404公益页面：<br>在<code>E:\MyBlog\source</code>目录下新建 <code>404.html</code> 页面，<code>404.html</code>内容为：<br><figure class="highlight htmlbars"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;span style="font-size:14px;"&gt;</div><div class="line">&lt;html&gt;  </div><div class="line">    &lt;head&gt;  </div><div class="line">         &lt;meta http-equiv="Content-Type" content="text/html; charset="UTF-8" /&gt;  </div><div class="line">         &lt;title&gt;公益404&lt;/title&gt;                                                                                                                                          </div><div class="line">    &lt;/head&gt;  </div><div class="line">    &lt;body&gt;  </div><div class="line">         &lt;script type="text/javascript" </div><div class="line">         src="http://www.qq.com/404/search_children.js" </div><div class="line">         charset="utf-8" </div><div class="line">         homePageUrl="http://blog.morningtec.cn" </div><div class="line">         homePageName="回到我的主页"&gt;</div><div class="line">         &lt;/script&gt;  </div><div class="line">    &lt;/body&gt;  </div><div class="line">&lt;/html&gt;</div><div class="line">&lt;/span&gt;</div></pre></td></tr></table></figure></p>
-<p>##设置本地站内搜索：<br>① 安装 <code>hexo-generator-searchdb</code>，在站点的根目录下执行以下命令：</p>
+<h2 id="设置小图片："><a href="#设置小图片：" class="headerlink" title="设置小图片："></a>设置小图片：</h2><p>将 favicon.ico 文件放在<code>E:\MyBlog\source</code>目录下</p>
+<h2 id="设置头像："><a href="#设置头像：" class="headerlink" title="设置头像："></a>设置头像：</h2><p>将头像图片放在<code>E:\MyBlog\themes\next\source\images</code>目录下，并在主题配置的avatar的字段的值改为<code>/images/你的图片文件</code></p>
+<h2 id="设置404公益页面："><a href="#设置404公益页面：" class="headerlink" title="设置404公益页面："></a>设置404公益页面：</h2><p>在<code>E:\MyBlog\source</code>目录下新建 <code>404.html</code> 页面，<code>404.html</code>内容为：<br><figure class="highlight htmlbars"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;span style="font-size:14px;"&gt;</div><div class="line">&lt;html&gt;  </div><div class="line">    &lt;head&gt;  </div><div class="line">         &lt;meta http-equiv="Content-Type" content="text/html; charset="UTF-8" /&gt;  </div><div class="line">         &lt;title&gt;公益404&lt;/title&gt;                                                                                                                                          </div><div class="line">    &lt;/head&gt;  </div><div class="line">    &lt;body&gt;  </div><div class="line">         &lt;script type="text/javascript" </div><div class="line">         src="http://www.qq.com/404/search_children.js" </div><div class="line">         charset="utf-8" </div><div class="line">         homePageUrl="http://blog.morningtec.cn" </div><div class="line">         homePageName="回到我的主页"&gt;</div><div class="line">         &lt;/script&gt;  </div><div class="line">    &lt;/body&gt;  </div><div class="line">&lt;/html&gt;</div><div class="line">&lt;/span&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="设置本地站内搜索："><a href="#设置本地站内搜索：" class="headerlink" title="设置本地站内搜索："></a>设置本地站内搜索：</h2><p>① 安装 <code>hexo-generator-searchdb</code>，在站点的根目录下执行以下命令：</p>
 <p><code>npm install hexo-generator-searchdb --save</code></p>
 <p>② 编辑<code>站点配置</code>文件，新增以下内容到任意位置：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">search:</div><div class="line">  path: search.xml</div><div class="line">  field: post</div><div class="line">  format: html</div><div class="line">  limit: 10000</div></pre></td></tr></table></figure></p>
 <p>③编辑<code>主题配置</code>文件，启用本地搜索功能：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"># Local search</div><div class="line">local_search:</div><div class="line">  enable: true</div></pre></td></tr></table></figure></p>
-<p>##设置评论功能：<br>由于<code>多说</code>和<code>网易云跟帖</code>都已停止了服务，所以我在这选择了<code>LiveRe</code>服务<br>① 注册LiveRe，LiveRe分为<code>City 版</code>（免费版本）<code>Premium 版</code>（收费版本）；选择免费版本就行。<br>② 注册完成后，获取到<code>data-uid</code>，编辑 <code>主题配置</code>文件， 编辑 livere_uid 字段，设置如下：<br><code>livere_uid: #your livere_uid</code></p>
-<p>##创建文章并发布到博客：<br>站点的根目录下执行以下命令来创建一篇文章：<br><code>hexo new 基于Hexo和Github搭建技术博客</code><br>通过关键字来指定文章的分类、标签及是否开启评论等功能。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: 基于Hexo和Github搭建技术博客</div><div class="line">date: 2017-09-28 16:30:05</div><div class="line">tags: hexo, github            // 标签</div><div class="line">categories: 搭建博客           // 分类</div><div class="line">comments: <span class="literal">false</span>               // 评论功能，默认开启</div><div class="line">---</div></pre></td></tr></table></figure></p>
-<p>##设置阅读全文<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">  文章标题</div><div class="line">  文章摘要</div><div class="line">&lt;!--more--&gt;</div><div class="line">  文章正文</div></pre></td></tr></table></figure></p>
+<h2 id="设置评论功能："><a href="#设置评论功能：" class="headerlink" title="设置评论功能："></a>设置评论功能：</h2><p>由于<code>多说</code>和<code>网易云跟帖</code>都已停止了服务，所以我在这选择了<code>LiveRe</code>服务<br>① 注册LiveRe，LiveRe分为<code>City 版</code>（免费版本）<code>Premium 版</code>（收费版本）；选择免费版本就行。<br>② 注册完成后，获取到<code>data-uid</code>，编辑 <code>主题配置</code>文件， 编辑 livere_uid 字段，设置如下：<br><code>livere_uid: #your livere_uid</code></p>
+<h2 id="创建文章并发布到博客："><a href="#创建文章并发布到博客：" class="headerlink" title="创建文章并发布到博客："></a>创建文章并发布到博客：</h2><p>站点的根目录下执行以下命令来创建一篇文章：<br><code>hexo new 基于Hexo和Github搭建技术博客</code><br>通过关键字来指定文章的分类、标签及是否开启评论等功能。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: 基于Hexo和Github搭建技术博客</div><div class="line">date: 2017-09-28 16:30:05</div><div class="line">tags: hexo, github            // 标签</div><div class="line">categories: 搭建博客           // 分类</div><div class="line">comments: <span class="literal">false</span>               // 评论功能，默认开启</div><div class="line">---</div></pre></td></tr></table></figure></p>
+<h2 id="设置阅读全文"><a href="#设置阅读全文" class="headerlink" title="设置阅读全文"></a>设置阅读全文</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">  文章标题</div><div class="line">  文章摘要</div><div class="line">&lt;!--more--&gt;</div><div class="line">  文章正文</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -473,7 +472,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo-github/" rel="tag"># hexo, github</a>
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+            <a href="/tags/github/" rel="tag"># github</a>
           
         </div>
       
@@ -548,8 +549,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           
             <img class="site-author-image" itemprop="image"
@@ -577,10 +587,10 @@
             
             
             <div class="site-state-item site-state-categories">
-              
+              <a href="/categories/index.html">
                 <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">分类</span>
-              
+              </a>
             </div>
           
 
@@ -588,10 +598,10 @@
             
             
             <div class="site-state-item site-state-tags">
-              
-                <span class="site-state-item-count">1</span>
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
-              
+              </a>
             </div>
           
 
@@ -614,6 +624,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">2.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Hexo"><span class="nav-number">3.</span> <span class="nav-text">安装Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署至Github"><span class="nav-number">4.</span> <span class="nav-text">部署至Github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#绑定域名"><span class="nav-number">5.</span> <span class="nav-text">绑定域名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置Hexo主题："><span class="nav-number">6.</span> <span class="nav-text">配置Hexo主题：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置NexT的菜单："><span class="nav-number">7.</span> <span class="nav-text">设置NexT的菜单：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置小图片："><span class="nav-number">8.</span> <span class="nav-text">设置小图片：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置头像："><span class="nav-number">9.</span> <span class="nav-text">设置头像：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置404公益页面："><span class="nav-number">10.</span> <span class="nav-text">设置404公益页面：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置本地站内搜索："><span class="nav-number">11.</span> <span class="nav-text">设置本地站内搜索：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置评论功能："><span class="nav-number">12.</span> <span class="nav-text">设置评论功能：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建文章并发布到博客："><span class="nav-number">13.</span> <span class="nav-text">创建文章并发布到博客：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置阅读全文"><span class="nav-number">14.</span> <span class="nav-text">设置阅读全文</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
