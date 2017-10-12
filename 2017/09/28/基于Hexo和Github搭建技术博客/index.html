@@ -77,10 +77,12 @@
 <meta property="og:site_name" content="晨之科SDK团队博客">
 <meta property="og:description" content="前言当前比较流行的方法就是Hexo与Github搭建博客。Hexo是一个快速、简洁且高效的博客框架，有比较丰富的主题和插件支持。Github为用户提供了Github Pages，其空间免费稳定，非常适合搭建个人博客。下面就为大家介绍如何使用Hexo和Github来搭建一个技术博客。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-11T07:48:20.922Z">
+<meta property="og:image" content="http://yoursite.com/2017/09/28/基于Hexo和Github搭建技术博客/example.png">
+<meta property="og:updated_time" content="2017-10-12T04:32:55.126Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于Hexo和Github搭建技术博客">
 <meta name="twitter:description" content="前言当前比较流行的方法就是Hexo与Github搭建博客。Hexo是一个快速、简洁且高效的博客框架，有比较丰富的主题和插件支持。Github为用户提供了Github Pages，其空间免费稳定，非常适合搭建个人博客。下面就为大家介绍如何使用Hexo和Github来搭建一个技术博客。">
+<meta name="twitter:image" content="http://yoursite.com/2017/09/28/基于Hexo和Github搭建技术博客/example.png">
 
 
 
@@ -453,10 +455,13 @@
 <p>② 编辑<code>站点配置</code>文件，新增以下内容到任意位置：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">search:</div><div class="line">  path: search.xml</div><div class="line">  field: post</div><div class="line">  format: html</div><div class="line">  limit: 10000</div></pre></td></tr></table></figure></p>
 <p>③编辑<code>主题配置</code>文件，启用本地搜索功能：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"># Local search</div><div class="line">local_search:</div><div class="line">  enable: true</div></pre></td></tr></table></figure></p>
 <h2 id="设置评论功能："><a href="#设置评论功能：" class="headerlink" title="设置评论功能："></a>设置评论功能：</h2><p>由于<code>多说</code>和<code>网易云跟帖</code>都已停止了服务，所以我在这选择了<code>LiveRe</code>服务<br>① 注册LiveRe，LiveRe分为<code>City 版</code>（免费版本）<code>Premium 版</code>（收费版本）；选择免费版本就行。<br>② 注册完成后，获取到<code>data-uid</code>，编辑 <code>主题配置</code>文件， 编辑 livere_uid 字段，设置如下：<br><code>livere_uid: #your livere_uid</code></p>
-<h2 id="团队成员发布文章："><a href="#团队成员发布文章：" class="headerlink" title="团队成员发布文章："></a>团队成员发布文章：</h2><p>① 先去<code>github</code>上把仓库下载下来，执行以下命令<code>git clone https://github.com/morningtec-moblie/MTBlog.git</code></p>
-<p>② 如果你还没有安装<code>hexo</code>，先执行<code>npm install hexo-cli -g</code>命令来安装<code>hexo</code></p>
-<p>③ 进入到<code>你的博客路径\.deploy_git</code>路径下执行<code>git init</code>命令 （如果没有找到<code>.deploy_git</code>文件夹，是因为此文件是隐藏文件，设置查看隐藏文件后就能看见，具体如何设置，自行百度）</p>
-<p>② 创建一篇新的文章<br>③ 执行<code>hexo g</code>，再执行<code>hexo d</code>，过几秒钟，去访问<code>bolg.morningtec.cn</code>，你就可以看到你发布的新文章了。</p>
+<h2 id="团队成员发布文章："><a href="#团队成员发布文章：" class="headerlink" title="团队成员发布文章："></a>团队成员发布文章：</h2><p>① 先去<code>github</code>上把仓库下载下来，执行以下命令<code>https://github.com/morningtec-moblie/MTBlog.git</code></p>
+<p>② 在<code>source/_posts/</code>文件夹下，新建一个<code>MarkDown</code>格式的文章。添加文章属性（例如）：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: 基于Hexo和Github搭建技术博客 // 博文标题</div><div class="line">date: 2017-09-28 16:30:05		// 日期</div><div class="line">tags: [hexo,github]            // 标签</div><div class="line">categories: 搭建博客           // 分类</div><div class="line">comments: <span class="literal">false</span>               // 评论功能，默认开启</div><div class="line">---</div></pre></td></tr></table></figure>
+<p>③ 文章写完后，再推送到<code>github</code>上，然后会有人在某一时刻上传到博客。</p>
+<p>④ 如果需要文章需要图片，在<code>source/_posts/</code>文件夹内新建一个和博客标题名一样的文件夹，把图片放置内，然后再<code>MarkDown</code>里引用（例如）：</p>
+<p><code>MarkDown的图片命令：![](基于Hexo和Github搭建技术博客/example.png)</code></p>
+<p><img src="/2017/09/28/基于Hexo和Github搭建技术博客/example.png" alt=""></p>
 <h2 id="创建文章并发布到博客："><a href="#创建文章并发布到博客：" class="headerlink" title="创建文章并发布到博客："></a>创建文章并发布到博客：</h2><p>站点的根目录下执行以下命令来创建一篇文章：<br><code>hexo new 基于Hexo和Github搭建技术博客</code><br>通过关键字来指定文章的分类、标签及是否开启评论等功能。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: 基于Hexo和Github搭建技术博客</div><div class="line">date: 2017-09-28 16:30:05</div><div class="line">tags: [hexo,github]            // 标签</div><div class="line">categories: 搭建博客           // 分类</div><div class="line">comments: <span class="literal">false</span>               // 评论功能，默认开启</div><div class="line">---</div></pre></td></tr></table></figure></p>
 <h2 id="设置博文图片"><a href="#设置博文图片" class="headerlink" title="设置博文图片"></a>设置博文图片</h2><p>把需要的图片放置在<code>你的博客路径\source\_posts\你的博客文件夹</code>，之后按照正常的方法使用，例如：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">这是一张图片![](图片博文/图片.jpg)</div></pre></td></tr></table></figure>
