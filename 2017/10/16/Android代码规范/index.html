@@ -53,7 +53,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Android," />
 
 
 
@@ -69,17 +69,18 @@
 
 
 
-<meta name="description" content="我们是晨之科SDK团队，写博客的目的是为了总结工作中的经验，记录团队和自己的成长。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于我们">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="一：文件命名规范：1、Class文件命名：① 类文件名采用驼峰命名法，以大写字母开头； ② 继承组件的类应该以组件名结尾，例如：XxxActivity，XxxService，XxxReceiver，XxxProvider， XxxFragment，XxxDialog… ② 自定义控件以继承的控件名结尾，例如：xxxImage， xxxButton， xxxView，xxxLayout… ③ 工具类">
+<meta name="keywords" content="Android">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android代码规范">
+<meta property="og:url" content="http://yoursite.com/2017/10/16/Android代码规范/index.html">
 <meta property="og:site_name" content="晨之科SDK团队博客">
-<meta property="og:description" content="我们是晨之科SDK团队，写博客的目的是为了总结工作中的经验，记录团队和自己的成长。">
+<meta property="og:description" content="一：文件命名规范：1、Class文件命名：① 类文件名采用驼峰命名法，以大写字母开头； ② 继承组件的类应该以组件名结尾，例如：XxxActivity，XxxService，XxxReceiver，XxxProvider， XxxFragment，XxxDialog… ② 自定义控件以继承的控件名结尾，例如：xxxImage， xxxButton， xxxView，xxxLayout… ③ 工具类">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-29T02:17:52.680Z">
+<meta property="og:updated_time" content="2017-10-18T01:38:51.704Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于我们">
-<meta name="twitter:description" content="我们是晨之科SDK团队，写博客的目的是为了总结工作中的经验，记录团队和自己的成长。">
+<meta name="twitter:title" content="Android代码规范">
+<meta name="twitter:description" content="一：文件命名规范：1、Class文件命名：① 类文件名采用驼峰命名法，以大写字母开头； ② 继承组件的类应该以组件名结尾，例如：XxxActivity，XxxService，XxxReceiver，XxxProvider， XxxFragment，XxxDialog… ② 自定义控件以继承的控件名结尾，例如：xxxImage， xxxButton， xxxView，xxxLayout… ③ 工具类">
 
 
 
@@ -109,13 +110,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/about/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/10/16/Android代码规范/"/>
 
 
 
 
 
-  <title>关于我们 | 晨之科SDK团队博客</title>
+  <title>Android代码规范 | 晨之科SDK团队博客</title>
   
 
 
@@ -284,34 +285,340 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/16/Android代码规范/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="晨之科SDK团队">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="晨之科SDK团队博客">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">关于我们</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <p><br><br> 我们是晨之科SDK团队，写博客的目的是为了总结工作中的经验，记录团队和自己的成长。</p>
-
+          <h1 class="post-title" itemprop="name headline">Android代码规范</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-16T16:30:05+08:00">
+                2017-10-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/代码规范/" itemprop="url" rel="index">
+                    <span itemprop="name">代码规范</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h3 id="一：文件命名规范："><a href="#一：文件命名规范：" class="headerlink" title="一：文件命名规范："></a>一：文件命名规范：</h3><h4 id="1、Class文件命名："><a href="#1、Class文件命名：" class="headerlink" title="1、Class文件命名："></a>1、Class文件命名：</h4><p>① 类文件名采用<code>驼峰</code>命名法，以<code>大写字母</code>开头；</p>
+<p>② 继承组件的类应该以组件名结尾，例如：<code>XxxActivity</code>，<code>XxxService</code>，<code>XxxReceiver</code>，<code>XxxProvider</code>， <code>XxxFragment</code>，<code>XxxDialog</code>…</p>
+<p>② 自定义控件以继承的控件名结尾，例如：<code>xxxImage</code>， <code>xxxButton</code>， <code>xxxView</code>，<code>xxxLayout</code>…</p>
+<p>③ 工具类以<code>Utils</code>结尾，例如：<code>HttpUtils</code>，<code>ImageLoadUtils</code>，<code>SPUtils</code>…</p>
+<h4 id="2、Resources-文件命名："><a href="#2、Resources-文件命名：" class="headerlink" title="2、Resources 文件命名："></a>2、Resources 文件命名：</h4><p>① drawable文件命名：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Asset Type</th>
+<th style="text-align:center">前缀</th>
+<th style="text-align:center">示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Action bar</td>
+<td style="text-align:center"><code>ab_</code></td>
+<td style="text-align:center"><code>ab_setting</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Button</td>
+<td style="text-align:center"><code>btn_</code></td>
+<td style="text-align:center"><code>btn_home_normal</code>，<code>btn_home_pressed</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Divider</td>
+<td style="text-align:center"><code>divider_</code></td>
+<td style="text-align:center"><code>divider_vertical</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Icon</td>
+<td style="text-align:center"><code>ic_</code></td>
+<td style="text-align:center"><code>ic_start</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Menu</td>
+<td style="text-align:center"><code>menu_</code></td>
+<td style="text-align:center"><code>menu_share</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Tabs</td>
+<td style="text-align:center"><code>tab_</code></td>
+<td style="text-align:center"><code>tab_news</code></td>
+</tr>
+<tr>
+<td style="text-align:center">background</td>
+<td style="text-align:center"><code>_bg</code></td>
+<td style="text-align:center"><code>login_bg</code></td>
+</tr>
+</tbody>
+</table>
+<p>② 选择器状态的文件命名：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">State</th>
+<th style="text-align:center">Suffix 尾缀</th>
+<th style="text-align:center">示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Normal</td>
+<td style="text-align:center"><code>_normal</code></td>
+<td style="text-align:center"><code>ic_order_normal</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Pressed</td>
+<td style="text-align:center"><code>_pressed</code></td>
+<td style="text-align:center"><code>ic_order_pressed</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Focused</td>
+<td style="text-align:center"><code>_focused</code></td>
+<td style="text-align:center"><code>ic_order_focused</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Disabled</td>
+<td style="text-align:center"><code>_disabled</code></td>
+<td style="text-align:center"><code>ic_order_disabled</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Selected</td>
+<td style="text-align:center"><code>_selected</code></td>
+<td style="text-align:center"><code>ic_order_selected</code></td>
+</tr>
+</tbody>
+</table>
+<p>③ layout文件命名：<code>layout_main</code>, <code>fragment_home</code>, <code>item_photo</code>，<code>dialog_change_password</code>，<code>popup_date</code>…</p>
+<p>④ 控件id命名：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">控件</th>
+<th style="text-align:center">缩写</th>
+<th style="text-align:center">示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">LinearLayout</td>
+<td style="text-align:center"><code>ll</code></td>
+<td style="text-align:center"><code>ll_friend</code></td>
+</tr>
+<tr>
+<td style="text-align:center">RelativeLayout</td>
+<td style="text-align:center"><code>rl</code></td>
+<td style="text-align:center"><code>rl_message</code></td>
+</tr>
+<tr>
+<td style="text-align:center">FrameLayout</td>
+<td style="text-align:center"><code>fl</code></td>
+<td style="text-align:center"><code>fl_cart</code></td>
+</tr>
+<tr>
+<td style="text-align:center">TableLayout</td>
+<td style="text-align:center"><code>tab</code></td>
+<td style="text-align:center"><code>tl_news</code></td>
+</tr>
+<tr>
+<td style="text-align:center">RecyclerView</td>
+<td style="text-align:center"><code>rv</code></td>
+<td style="text-align:center"><code>rv_list</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Button</td>
+<td style="text-align:center"><code>btn</code></td>
+<td style="text-align:center"><code>btn_publish</code></td>
+</tr>
+<tr>
+<td style="text-align:center">ImageButton</td>
+<td style="text-align:center"><code>ibtn</code></td>
+<td style="text-align:center"><code>ibtn_avatar</code></td>
+</tr>
+<tr>
+<td style="text-align:center">TextView</td>
+<td style="text-align:center"><code>tv</code></td>
+<td style="text-align:center"><code>tv_name</code></td>
+</tr>
+<tr>
+<td style="text-align:center">ImageView</td>
+<td style="text-align:center"><code>iv</code></td>
+<td style="text-align:center"><code>iv_head</code></td>
+</tr>
+<tr>
+<td style="text-align:center">EditText</td>
+<td style="text-align:center"><code>et</code></td>
+<td style="text-align:center"><code>et_password</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="代码内部命名："><a href="#代码内部命名：" class="headerlink" title="代码内部命名："></a>代码内部命名：</h3><p>① 类变量命名：</p>
+<ul>
+<li>公有变量按<code>小驼峰</code>命名；</li>
+</ul>
+<ul>
+<li>静态常量以<code>大写字母+下划线</code>命名；</li>
+<li>非公有&amp;非静态变量以<code>m</code>开头；</li>
+<li>私有&amp;静态变量以<code>s</code>开头；</li>
+<li>使用<code>功能/描述</code>+<code>类型</code>命名；</li>
+<li>变量较多，<code>分类摆放</code>并<code>注释</code>；</li>
+<li>接口类在<code>最后</code>；</li>
+<li><code>get</code>，<code>set</code>方法去掉<code>m</code></li>
+<li>方法形参用<code>_</code>开头</li>
+<li>方法名见名知意</li>
+<li>尽量使用三目运算符</li>
+<li>接口尽量不要使用内部类，多个接口方法加上开始-结束注释</li>
+<li><code>if</code> 判断加上 <code>{}</code></li>
+</ul>
+<p>示例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CodeStandard</span> <span class="keyword">implements</span> <span class="title">LoginType</span> </span>&#123;</div><div class="line">  </div><div class="line">  	<span class="comment">// 公有变量按小驼峰命名；</span></div><div class="line">    <span class="keyword">public</span> String userName = <span class="string">"zhangSan"</span>;</div><div class="line">  </div><div class="line">  	<span class="comment">// 静态常量以大写字母+下划线命名；</span></div><div class="line">  	<span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> LOGIN_TYPE = <span class="string">"weixnLogin"</span>;</div><div class="line">  </div><div class="line">  	<span class="comment">// 非公有&amp;非静态变量以m开头；</span></div><div class="line">  	<span class="keyword">private</span> String mPassword = <span class="string">"123456"</span>;</div><div class="line">  </div><div class="line">  	<span class="comment">// 私有&amp;静态变量以s开头；</span></div><div class="line">  	<span class="keyword">private</span> <span class="keyword">static</span> String sAddress = <span class="string">"上海"</span></div><div class="line">      </div><div class="line">    <span class="keyword">private</span> Login mLogin;</div><div class="line">      </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;</div><div class="line">        mLogin.setLogin(<span class="keyword">this</span>)</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="comment">// 方法形参用 _ 开头</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setPassword</span><span class="params">(String _password)</span> </span>&#123;</div><div class="line">        <span class="keyword">this</span>.mPassword = _password;</div><div class="line">    &#125;</div><div class="line">  </div><div class="line">  	<span class="function"><span class="keyword">public</span> String <span class="title">getPassword</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">this</span>.mPassword;</div><div class="line">    &#125;</div><div class="line">  </div><div class="line">  	<span class="comment">// 方法名见名知意，尽量使用三目运算符。</span></div><div class="line">  	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">max</span><span class="params">(<span class="keyword">int</span> _value1, <span class="keyword">int</span> _value2)</span></span>&#123;</div><div class="line">        <span class="keyword">return</span> _value1 &gt; _value ? _value1 : _value2</div><div class="line">    &#125;</div><div class="line">  </div><div class="line">  </div><div class="line">  	&lt;!-- 登录类型的接口方法 start--&gt;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">qqLogin</span><span class="params">()</span> </span>&#123;</div><div class="line">        ...</div><div class="line">    &#125;</div><div class="line">  </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">weixinLogin</span><span class="params">()</span> </span>&#123;</div><div class="line">        ...</div><div class="line">    &#125;</div><div class="line">  	&lt;!-- 登录类型的接口方法 end--&gt;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Android/" rel="tag"># Android</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/13/团队Git协作方案/" rel="next" title="团队Git协作方案">
+                <i class="fa fa-chevron-left"></i> 团队Git协作方案
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/10/17/iOS代码规范/" rel="prev" title="iOS代码规范">
+                iOS代码规范 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -346,8 +653,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           
             <img class="site-author-image" itemprop="image"
@@ -412,6 +728,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一：文件命名规范："><span class="nav-number">1.</span> <span class="nav-text">一：文件命名规范：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、Class文件命名："><span class="nav-number">1.1.</span> <span class="nav-text">1、Class文件命名：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、Resources-文件命名："><span class="nav-number">1.2.</span> <span class="nav-text">2、Resources 文件命名：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码内部命名："><span class="nav-number">2.</span> <span class="nav-text">代码内部命名：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

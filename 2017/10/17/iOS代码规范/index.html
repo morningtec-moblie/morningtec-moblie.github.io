@@ -53,7 +53,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="iOS,代码规范,OC," />
 
 
 
@@ -69,13 +69,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="晨之科SDK团队博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="#参考：Objective-C编码规范[译] IOS 编码规范整理 iOS团队代码规范（OC版） #目录| 语言 | 代码组织 | 空格 | 注释 | 命名 | 下划线 | 方法 | 变量 | 属性特性 | 点符号语法 || — | — | — | — | — | — | — | — | — | — || 字面值 | 常量 | 枚举类型 | Case语句 | 私有属性 | 布尔值 | 条件语句 |">
+<meta name="keywords" content="iOS,代码规范,OC">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS代码规范">
+<meta property="og:url" content="http://yoursite.com/2017/10/17/iOS代码规范/index.html">
 <meta property="og:site_name" content="晨之科SDK团队博客">
+<meta property="og:description" content="#参考：Objective-C编码规范[译] IOS 编码规范整理 iOS团队代码规范（OC版） #目录| 语言 | 代码组织 | 空格 | 注释 | 命名 | 下划线 | 方法 | 变量 | 属性特性 | 点符号语法 || — | — | — | — | — | — | — | — | — | — || 字面值 | 常量 | 枚举类型 | Case语句 | 私有属性 | 布尔值 | 条件语句 |">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-10-18T01:35:09.224Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="晨之科SDK团队博客">
+<meta name="twitter:title" content="iOS代码规范">
+<meta name="twitter:description" content="#参考：Objective-C编码规范[译] IOS 编码规范整理 iOS团队代码规范（OC版） #目录| 语言 | 代码组织 | 空格 | 注释 | 命名 | 下划线 | 方法 | 变量 | 属性特性 | 点符号语法 || — | — | — | — | — | — | — | — | — | — || 字面值 | 常量 | 枚举类型 | Case语句 | 私有属性 | 布尔值 | 条件语句 |">
 
 
 
@@ -105,13 +110,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/10/17/iOS代码规范/"/>
 
 
 
 
 
-  <title>晨之科SDK团队博客</title>
+  <title>iOS代码规范 | 晨之科SDK团队博客</title>
   
 
 
@@ -130,8 +135,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -278,9 +282,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -310,9 +314,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/17/iOS代码规范/" itemprop="url">iOS代码规范</a></h1>
+          <h1 class="post-title" itemprop="name headline">iOS代码规范</h1>
         
 
         <div class="post-meta">
@@ -384,9 +386,7 @@
       
 
       
-        
-          
-            <p>#参考：<br><a href="http://www.jianshu.com/p/8b76814b3663" target="_blank" rel="external">Objective-C编码规范[译]</a></p>
+        <p>#参考：<br><a href="http://www.jianshu.com/p/8b76814b3663" target="_blank" rel="external">Objective-C编码规范[译]</a></p>
 <p><a href="http://www.jianshu.com/p/f13119c179a4" target="_blank" rel="external">IOS 编码规范整理</a></p>
 <p><a href="http://hawkingouyang.com/2016/09/10/7_ObjC-code-style-as-team/" target="_blank" rel="external">iOS团队代码规范（OC版）</a></p>
 <p>#目录<br>| <a href="#language">语言</a> | <a href="#codeOrganization">代码组织</a> | <a href="#space">空格</a> | <a href="#annotations">注释</a> | <a href="#name">命名</a> | <a href="#Underline">下划线</a> | <a href="#method">方法</a> | <a href="#variable">变量</a> | <a href="#attributeAttribute">属性特性</a> | <a href="#pointSymbolSyntax">点符号语法</a> |<br>| — | — | — | — | — | — | — | — | — | — |<br>| <strong><a href="#literalValue">字面值</a></strong> | <strong><a href="#constant">常量</a></strong> | <strong><a href="#enumType">枚举类型</a></strong> | <strong><a href="#caseStatement">Case语句</a></strong> | <strong><a href="#privateAttribute">私有属性</a></strong> | <strong><a href="#booleanValue">布尔值</a></strong> | <strong><a href="#conditionalStatement">条件语句</a></strong> | <strong><a href="#ternaryOperator">三元操作符</a></strong> | <strong><a href="#initMethod">Init方法</a></strong> | <strong><a href="#classConstructor">类构造方法</a></strong> |<br>| <strong><a href="#CGRectFunction">CGRect函数</a></strong> | <strong><a href="#goldPath">黄金路径</a></strong> | <strong><a href="#errorHandling">错误处理</a></strong> | <strong><a href="#singletonMode">单例模式</a></strong> | <strong><a href="#lineBreaks">换行符</a></strong> | <strong><a href="#XcodeProject">Xcode工程</a></strong> | <strong><a href="#grammarSugar">语法糖</a></strong> | <strong><a href="#projectCatalog">项目工程目录</a></strong> |</p>
@@ -627,8 +627,6 @@
 </li>
 </ul>
 
-          
-        
       
     </div>
     
@@ -643,818 +641,40 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/16/Android代码规范/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="晨之科SDK团队">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="晨之科SDK团队博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/16/Android代码规范/" itemprop="url">Android代码规范</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-16T16:30:05+08:00">
-                2017-10-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/代码规范/" itemprop="url" rel="index">
-                    <span itemprop="name">代码规范</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/iOS/" rel="tag"># iOS</a>
           
-
+            <a href="/tags/代码规范/" rel="tag"># 代码规范</a>
           
-            
+            <a href="/tags/OC/" rel="tag"># OC</a>
           
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="一：文件命名规范："><a href="#一：文件命名规范：" class="headerlink" title="一：文件命名规范："></a>一：文件命名规范：</h3><h4 id="1、Class文件命名："><a href="#1、Class文件命名：" class="headerlink" title="1、Class文件命名："></a>1、Class文件命名：</h4><p>① 类文件名采用<code>驼峰</code>命名法，以<code>大写字母</code>开头；</p>
-<p>② 继承组件的类应该以组件名结尾，例如：<code>XxxActivity</code>，<code>XxxService</code>，<code>XxxReceiver</code>，<code>XxxProvider</code>， <code>XxxFragment</code>，<code>XxxDialog</code>…</p>
-<p>② 自定义控件以继承的控件名结尾，例如：<code>xxxImage</code>， <code>xxxButton</code>， <code>xxxView</code>，<code>xxxLayout</code>…</p>
-<p>③ 工具类以<code>Utils</code>结尾，例如：<code>HttpUtils</code>，<code>ImageLoadUtils</code>，<code>SPUtils</code>…</p>
-<h4 id="2、Resources-文件命名："><a href="#2、Resources-文件命名：" class="headerlink" title="2、Resources 文件命名："></a>2、Resources 文件命名：</h4><p>① drawable文件命名：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">Asset Type</th>
-<th style="text-align:center">前缀</th>
-<th style="text-align:center">示例</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">Action bar</td>
-<td style="text-align:center"><code>ab_</code></td>
-<td style="text-align:center"><code>ab_setting</code></td>
-</tr>
-<tr>
-<td style="text-align:center">Button</td>
-<td style="text-align:center"><code>btn_</code></td>
-<td style="text-align:center"><code>btn_home_normal</code>，<code>btn_home_pressed</code></td>
-</tr>
-<tr>
-<td style="text-align:center">Divider</td>
-<td style="text-align:center"><code>divider_</code></td>
-<td style="text-align:center"><code>divider_vertical</code></td>
-</tr>
-<tr>
-<td style="text-align:center">Icon</td>
-<td style="text-align:center"><code>ic_</code></td>
-<td style="text-align:center"><code>ic_start</code></td>
-</tr>
-<tr>
-<td style="text-align:center">Menu</td>
-<td style="text-align:center"><code>menu_</code></td>
-<td style="text-align:center"><code>menu_share</code></td>
-</tr>
-<tr>
-<td style="text-align:center">Tabs</td>
-<td style="text-align:center"><code>tab_</code></td>
-<td style="text-align:center"><code>tab_news</code></td>
-</tr>
-<tr>
-<td style="text-align:center">background</td>
-<td style="text-align:center"><code>_bg</code></td>
-<td style="text-align:center"><code>login_bg</code></td>
-</tr>
-</tbody>
-</table>
-<p>② 选择器状态的文件命名：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">State</th>
-<th style="text-align:center">Suffix 尾缀</th>
-<th style="text-align:center">示例</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">Normal</td>
-<td style="text-align:center"><code>_normal</code></td>
-<td style="text-align:center"><code>ic_order_normal</code></td>
-</tr>
-<tr>
-<td style="text-align:center">Pressed</td>
-<td style="text-align:center"><code>_pressed</code></td>
-<td style="text-align:center"><code>ic_order_pressed</code></td>
-</tr>
-<tr>
-<td style="text-align:center">Focused</td>
-<td style="text-align:center"><code>_focused</code></td>
-<td style="text-align:center"><code>ic_order_focused</code></td>
-</tr>
-<tr>
-<td style="text-align:center">Disabled</td>
-<td style="text-align:center"><code>_disabled</code></td>
-<td style="text-align:center"><code>ic_order_disabled</code></td>
-</tr>
-<tr>
-<td style="text-align:center">Selected</td>
-<td style="text-align:center"><code>_selected</code></td>
-<td style="text-align:center"><code>ic_order_selected</code></td>
-</tr>
-</tbody>
-</table>
-<p>③ layout文件命名：<code>layout_main</code>, <code>fragment_home</code>, <code>item_photo</code>，<code>dialog_change_password</code>，<code>popup_date</code>…</p>
-<p>④ 控件id命名：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">控件</th>
-<th style="text-align:center">缩写</th>
-<th style="text-align:center">示例</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">LinearLayout</td>
-<td style="text-align:center"><code>ll</code></td>
-<td style="text-align:center"><code>ll_friend</code></td>
-</tr>
-<tr>
-<td style="text-align:center">RelativeLayout</td>
-<td style="text-align:center"><code>rl</code></td>
-<td style="text-align:center"><code>rl_message</code></td>
-</tr>
-<tr>
-<td style="text-align:center">FrameLayout</td>
-<td style="text-align:center"><code>fl</code></td>
-<td style="text-align:center"><code>fl_cart</code></td>
-</tr>
-<tr>
-<td style="text-align:center">TableLayout</td>
-<td style="text-align:center"><code>tab</code></td>
-<td style="text-align:center"><code>tl_news</code></td>
-</tr>
-<tr>
-<td style="text-align:center">RecyclerView</td>
-<td style="text-align:center"><code>rv</code></td>
-<td style="text-align:center"><code>rv_list</code></td>
-</tr>
-<tr>
-<td style="text-align:center">Button</td>
-<td style="text-align:center"><code>btn</code></td>
-<td style="text-align:center"><code>btn_publish</code></td>
-</tr>
-<tr>
-<td style="text-align:center">ImageButton</td>
-<td style="text-align:center"><code>ibtn</code></td>
-<td style="text-align:center"><code>ibtn_avatar</code></td>
-</tr>
-<tr>
-<td style="text-align:center">TextView</td>
-<td style="text-align:center"><code>tv</code></td>
-<td style="text-align:center"><code>tv_name</code></td>
-</tr>
-<tr>
-<td style="text-align:center">ImageView</td>
-<td style="text-align:center"><code>iv</code></td>
-<td style="text-align:center"><code>iv_head</code></td>
-</tr>
-<tr>
-<td style="text-align:center">EditText</td>
-<td style="text-align:center"><code>et</code></td>
-<td style="text-align:center"><code>et_password</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="代码内部命名："><a href="#代码内部命名：" class="headerlink" title="代码内部命名："></a>代码内部命名：</h3><p>① 类变量命名：</p>
-<ul>
-<li>公有变量按<code>小驼峰</code>命名；</li>
-</ul>
-<ul>
-<li>静态常量以<code>大写字母+下划线</code>命名；</li>
-<li>非公有&amp;非静态变量以<code>m</code>开头；</li>
-<li>私有&amp;静态变量以<code>s</code>开头；</li>
-<li>使用<code>功能/描述</code>+<code>类型</code>命名；</li>
-<li>变量较多，<code>分类摆放</code>并<code>注释</code>；</li>
-<li>接口类在<code>最后</code>；</li>
-<li><code>get</code>，<code>set</code>方法去掉<code>m</code></li>
-<li>方法形参用<code>_</code>开头</li>
-<li>方法名见名知意</li>
-<li>尽量使用三目运算符</li>
-<li>接口尽量不要使用内部类，多个接口方法加上开始-结束注释</li>
-<li><code>if</code> 判断加上 <code>{}</code></li>
-</ul>
-<p>示例：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CodeStandard</span> <span class="keyword">implements</span> <span class="title">LoginType</span> </span>&#123;</div><div class="line">  </div><div class="line">  	<span class="comment">// 公有变量按小驼峰命名；</span></div><div class="line">    <span class="keyword">public</span> String userName = <span class="string">"zhangSan"</span>;</div><div class="line">  </div><div class="line">  	<span class="comment">// 静态常量以大写字母+下划线命名；</span></div><div class="line">  	<span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> LOGIN_TYPE = <span class="string">"weixnLogin"</span>;</div><div class="line">  </div><div class="line">  	<span class="comment">// 非公有&amp;非静态变量以m开头；</span></div><div class="line">  	<span class="keyword">private</span> String mPassword = <span class="string">"123456"</span>;</div><div class="line">  </div><div class="line">  	<span class="comment">// 私有&amp;静态变量以s开头；</span></div><div class="line">  	<span class="keyword">private</span> <span class="keyword">static</span> String sAddress = <span class="string">"上海"</span></div><div class="line">      </div><div class="line">    <span class="keyword">private</span> Login mLogin;</div><div class="line">      </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;</div><div class="line">        mLogin.setLogin(<span class="keyword">this</span>)</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="comment">// 方法形参用 _ 开头</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setPassword</span><span class="params">(String _password)</span> </span>&#123;</div><div class="line">        <span class="keyword">this</span>.mPassword = _password;</div><div class="line">    &#125;</div><div class="line">  </div><div class="line">  	<span class="function"><span class="keyword">public</span> String <span class="title">getPassword</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">this</span>.mPassword;</div><div class="line">    &#125;</div><div class="line">  </div><div class="line">  	<span class="comment">// 方法名见名知意，尽量使用三目运算符。</span></div><div class="line">  	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">max</span><span class="params">(<span class="keyword">int</span> _value1, <span class="keyword">int</span> _value2)</span></span>&#123;</div><div class="line">        <span class="keyword">return</span> _value1 &gt; _value ? _value1 : _value2</div><div class="line">    &#125;</div><div class="line">  </div><div class="line">  </div><div class="line">  	&lt;!-- 登录类型的接口方法 start--&gt;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">qqLogin</span><span class="params">()</span> </span>&#123;</div><div class="line">        ...</div><div class="line">    &#125;</div><div class="line">  </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">weixinLogin</span><span class="params">()</span> </span>&#123;</div><div class="line">        ...</div><div class="line">    &#125;</div><div class="line">  	&lt;!-- 登录类型的接口方法 end--&gt;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/13/团队Git协作方案/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="晨之科SDK团队">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="晨之科SDK团队博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/13/团队Git协作方案/" itemprop="url">团队Git协作方案</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-13T14:11:05+08:00">
-                2017-10-13
-              </time>
+              <a href="/2017/10/16/Android代码规范/" rel="next" title="Android代码规范">
+                <i class="fa fa-chevron-left"></i> Android代码规范
+              </a>
             
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/团队协作/" itemprop="url" rel="index">
-                    <span itemprop="name">团队协作</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="团队Git协作方案"><a href="#团队Git协作方案" class="headerlink" title="团队Git协作方案"></a>团队Git协作方案</h1><p>git分支分类：</p>
-<pre><code>1、master 
-    当前最新的稳定版本
-2、developer
-    用于发布前多人协作时合并
-</code></pre><h3 id="一、master分支规则"><a href="#一、master分支规则" class="headerlink" title="一、master分支规则"></a>一、master分支规则</h3><p>master分支主要分一下下两种</p>
-<pre><code>1、master
-    当前最新的稳定版本
-2、master-项目名称-版本号-封包时间
-    例：master-gulugames-2.0.2-20171212
-</code></pre><p>每一个稳定版本需要保存分支，保存的分支超过30个时，从最老的开始删除，保持最新的20个分支</p>
-<h3 id="二、developer分支规则"><a href="#二、developer分支规则" class="headerlink" title="二、developer分支规则"></a>二、developer分支规则</h3><p>developer分支主要分为以下两种</p>
-<pre><code>1、developer-项目名称-版本号-开始开发时间
-    当前版本的开发版分支，用于合并其他人的分支后出包,在正式上线之后，合并进对应的master分支
-    例：developer-gulugames-2.0.2-20171202
-2、人员简拼-developer-项目名称-版本号
-    开发人员用于开发自己对应功能的分支，每个阶段开发完成后合并进1中的分支
-    例：yangjh-developer-gulugames-2.0.2
-</code></pre><p>用于合并的开发分支以及个人分支在<a name="fenced-code-block">正式封包并上线之后</a>删除</p>
-<p>注：在个人developer分支合并进</p>
-<h2 id="二、git提交备注规范"><a href="#二、git提交备注规范" class="headerlink" title="二、git提交备注规范"></a>二、git提交备注规范</h2><p>git提交一般分为三种状况</p>
-<h3 id="一、jira任务提交"><a href="#一、jira任务提交" class="headerlink" title="一、jira任务提交"></a>一、jira任务提交</h3><pre><code>1、jira-jira任务编号(-进度)        (这种主要是开发某个jira任务时提交，进度部分为可选)
-例：jire-SDK-23-50%(当前任务没有完成时)
-    jira-SDK-23(当前任务完成时)
-</code></pre><h3 id="二、bug修复"><a href="#二、bug修复" class="headerlink" title="二、bug修复"></a>二、bug修复</h3><pre><code>1、bug(-bugfree编号/bug描述)        (bugfree上的bug填bug编号，否则填bug描述)
-例：bug-6187
-    bug-修复了登陆时不显示loading的问题
-</code></pre><h3 id="三、优化工作"><a href="#三、优化工作" class="headerlink" title="三、优化工作"></a>三、优化工作</h3><pre><code>1、adv-(jira任务编号/优化描述)    (有jira任务时用jira编号，没有时用描述)
-例：adv-SDK-23
-    adv-优化浮窗流畅性
-
-
-
-
-    ## 一、git分支管理
-</code></pre><h3 id="一、版本号规则："><a href="#一、版本号规则：" class="headerlink" title="一、版本号规则："></a>一、版本号规则：</h3><pre><code>产品版本  2.0.0    别名：xxx （可理解为开发代号，可选）
-修订号    2.0.2    第二次修订,修复bug后的稳定版本             
-构建号    2.0.2.156    第156次build (没有jinkens自动打包时可先命名为：2.0.2)
-代码版本    2.0.2-release、更多为开发阶段git代码管理 
-
-发布版本号    一般同修行号一致    2.0.2
-</code></pre>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/13/版本号规则/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="晨之科SDK团队">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="晨之科SDK团队博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/13/版本号规则/" itemprop="url">版本号规则</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-13T14:11:05+08:00">
-                2017-10-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/团队协作/" itemprop="url" rel="index">
-                    <span itemprop="name">团队协作</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="版本号管理方案："><a href="#版本号管理方案：" class="headerlink" title="版本号管理方案："></a>版本号管理方案：</h1><h2 id="一、版本号总体说明"><a href="#一、版本号总体说明" class="headerlink" title="一、版本号总体说明"></a>一、版本号总体说明</h2><pre><code>产品版本  2.0.0    别名：xxx （可理解为开发代号，可选）
-</code></pre><p>1、第一位为大版本号，表示重大变动，比如添加论坛、重构这种行为</p>
-<p>2、第二位为中间版本号，表示功能部分变动，比如修改ui，添加公开方法</p>
-<p>3、第三位为修订号，表示修复bug后的稳定版本</p>
-<h3 id="关于版本号的自增规则"><a href="#关于版本号的自增规则" class="headerlink" title="关于版本号的自增规则"></a>关于版本号的自增规则</h3><pre><code>每上一位的版本号增加时，后一位重置
-
-例1：当前版本：
-        2.1.2
-    更新一个大版本，第一位加一，则得到：
-        3.0.0
-
-例2：当前版本：
-        2.2.34
-    更新一个小版本，第二位加一，则得到：
-        2.3.0
-</code></pre><h2 id="二、版本号示例"><a href="#二、版本号示例" class="headerlink" title="二、版本号示例"></a>二、版本号示例</h2><pre><code>1、修订号
-2.0.2    第二次修订,修复bug后的稳定版本
-2.0.12     第十二次修订，修复bug后的稳定版本
-</code></pre><p>–<br>    2、构建号                               </p>
-<pre><code>2.0.2.156    第156次build (没有jinkens自动打包时可先命名为：2.0.2)
-</code></pre><p>–<br>    3、代码版本-目前用不到</p>
-<pre><code>2.0.2-release、更多为开发阶段git代码管理 
-</code></pre><p>–<br>    4、发布版本号<br>        一般同修订号一致    2.0.2</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/28/基于Hexo和Github搭建技术博客/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="晨之科SDK团队">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="晨之科SDK团队博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/28/基于Hexo和Github搭建技术博客/" itemprop="url">基于Hexo和Github搭建技术博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-28T16:30:05+08:00">
-                2017-09-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/搭建博客/" itemprop="url" rel="index">
-                    <span itemprop="name">搭建博客</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>当前比较流行的方法就是Hexo与Github搭建博客。Hexo是一个快速、简洁且高效的博客框架，有比较丰富的主题和插件支持。<br>Github为用户提供了Github Pages，其空间免费稳定，非常适合搭建个人博客。下面就为大家介绍如何使用Hexo和Github来搭<br>建一个技术博客。<br></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/09/28/基于Hexo和Github搭建技术博客/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -1464,10 +684,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -1475,6 +696,12 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMTA5NC83NjQy"></div>
+    
+  </div>
+
 
         </div>
         
@@ -1495,8 +722,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           
             <img class="site-author-image" itemprop="image"
@@ -1561,6 +797,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#语言"><span class="nav-number">1.</span> <span class="nav-text">语言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码组织"><span class="nav-number">2.</span> <span class="nav-text">代码组织</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#空格"><span class="nav-number">3.</span> <span class="nav-text">空格</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注释"><span class="nav-number">4.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#命名"><span class="nav-number">5.</span> <span class="nav-text">命名</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#下划线"><span class="nav-number">6.</span> <span class="nav-text">下划线</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#方法"><span class="nav-number">7.</span> <span class="nav-text">方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#变量"><span class="nav-number">8.</span> <span class="nav-text">变量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#属性特性"><span class="nav-number">9.</span> <span class="nav-text">属性特性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#点符号语法"><span class="nav-number">10.</span> <span class="nav-text">点符号语法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字面值"><span class="nav-number">11.</span> <span class="nav-text">字面值</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常量"><span class="nav-number">12.</span> <span class="nav-text">常量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#枚举类型"><span class="nav-number">13.</span> <span class="nav-text">枚举类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Case语句"><span class="nav-number">14.</span> <span class="nav-text">Case语句</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#私有属性"><span class="nav-number">15.</span> <span class="nav-text">私有属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#布尔值"><span class="nav-number">16.</span> <span class="nav-text">布尔值</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#条件语句"><span class="nav-number">17.</span> <span class="nav-text">条件语句</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三元操作符"><span class="nav-number">18.</span> <span class="nav-text">三元操作符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Init方法"><span class="nav-number">19.</span> <span class="nav-text">Init方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#类构造方法"><span class="nav-number">20.</span> <span class="nav-text">类构造方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CGRect函数"><span class="nav-number">21.</span> <span class="nav-text">CGRect函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#黄金路径"><span class="nav-number">22.</span> <span class="nav-text">黄金路径</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#错误处理"><span class="nav-number">23.</span> <span class="nav-text">错误处理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#单例模式"><span class="nav-number">24.</span> <span class="nav-text">单例模式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#换行符"><span class="nav-number">25.</span> <span class="nav-text">换行符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Xcode工程"><span class="nav-number">26.</span> <span class="nav-text">Xcode工程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#语法糖"><span class="nav-number">27.</span> <span class="nav-text">语法糖</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#项目工程目录"><span class="nav-number">28.</span> <span class="nav-text">项目工程目录</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1717,6 +969,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
