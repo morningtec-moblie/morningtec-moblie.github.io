@@ -460,7 +460,7 @@
 <p>到这里，你已经开启了菜单页面，并没有创建，想要创建菜单页面，在跟目录文件夹下输入<code>hexp new page “tags”</code>，创建tag页面，其他的页面你也可以相应的创建出来。</p>
 <h2 id="设置小图片："><a href="#设置小图片：" class="headerlink" title="设置小图片："></a>设置小图片：</h2><p>将 favicon.ico 文件放在<code>E:\MyBlog\source</code>目录下</p>
 <h2 id="设置头像："><a href="#设置头像：" class="headerlink" title="设置头像："></a>设置头像：</h2><p>将头像图片放在<code>E:\MyBlog\themes\next\source\images</code>目录下，并在主题配置的avatar的字段的值改为<code>/images/你的图片文件</code></p>
-<h2 id="设置404公益页面："><a href="#设置404公益页面：" class="headerlink" title="设置404公益页面："></a>设置404公益页面：</h2><p>在<code>E:\MyBlog\source</code>目录下新建 <code>404.html</code> 页面，<code>404.html</code>内容为：<br><figure class="highlight htmlbars"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;span style="font-size:14px;"&gt;</div><div class="line">&lt;html&gt;  </div><div class="line">    &lt;head&gt;  </div><div class="line">         &lt;meta http-equiv="Content-Type" content="text/html; charset="UTF-8" /&gt;  </div><div class="line">         &lt;title&gt;公益404&lt;/title&gt;                                                                                                                                          </div><div class="line">    &lt;/head&gt;  </div><div class="line">    &lt;body&gt;  </div><div class="line">         &lt;script type="text/javascript" </div><div class="line">         src="http://www.qq.com/404/search_children.js" </div><div class="line">         charset="utf-8" </div><div class="line">         homePageUrl="http://blog.morningtec.cn" </div><div class="line">         homePageName="回到我的主页"&gt;</div><div class="line">         &lt;/script&gt;  </div><div class="line">    &lt;/body&gt;  </div><div class="line">&lt;/html&gt;</div><div class="line">&lt;/span&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="设置404公益页面："><a href="#设置404公益页面：" class="headerlink" title="设置404公益页面："></a>设置404公益页面：</h2><p>在<code>E:\MyBlog\source</code>目录下新建 <code>404.html</code> 页面，<code>404.html</code>内容为：<br><figure class="highlight htmlbars"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">"font-size:14px;"</span>&gt;</span></span></div><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">html</span>&gt;</span>  </span></div><div class="line"><span class="xml">    <span class="tag">&lt;<span class="name">head</span>&gt;</span>  </span></div><div class="line"><span class="xml">         <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset="</span><span class="attr">UTF-8</span>" /&gt;</span>  </span></div><div class="line"><span class="xml">         <span class="tag">&lt;<span class="name">title</span>&gt;</span>公益404<span class="tag">&lt;/<span class="name">title</span>&gt;</span>                                                                                                                                          </span></div><div class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span>  </span></div><div class="line"><span class="xml">    <span class="tag">&lt;<span class="name">body</span>&gt;</span>  </span></div><div class="line"><span class="xml">         <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> </span></span></div><div class="line"><span class="xml">         src="http://www.qq.com/404/search_children.js" </span></div><div class="line"><span class="xml">         charset="utf-8" </span></div><div class="line"><span class="xml">         homePageUrl="http://blog.morningtec.cn" </span></div><div class="line"><span class="xml">         homePageName="回到我的主页"&gt;</span></div><div class="line"><span class="xml">         <span class="tag">&lt;/<span class="name">script</span>&gt;</span>  </span></div><div class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span>  </span></div><div class="line"><span class="xml"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></div><div class="line"><span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></div></pre></td></tr></table></figure></p>
 <h2 id="设置本地站内搜索："><a href="#设置本地站内搜索：" class="headerlink" title="设置本地站内搜索："></a>设置本地站内搜索：</h2><p>① 安装 <code>hexo-generator-searchdb</code>，在站点的根目录下执行以下命令：</p>
 <p><code>npm install hexo-generator-searchdb --save</code></p>
 <p>② 编辑<code>站点配置</code>文件，新增以下内容到任意位置：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">search:</div><div class="line">  path: search.xml</div><div class="line">  field: post</div><div class="line">  format: html</div><div class="line">  limit: 10000</div></pre></td></tr></table></figure></p>
@@ -515,8 +515,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/10/13/版本号规则/" rel="prev" title="版本号规则">
-                版本号规则 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/10/13/团队Git协作方案/" rel="prev" title="团队Git协作方案">
+                团队Git协作方案 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -599,7 +599,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -621,7 +621,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
